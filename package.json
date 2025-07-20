@@ -1,0 +1,31 @@
+{
+  "name": "express-route-docs",
+  "version": "1.0.0",
+  "description": "Zero-config route documentation generator for Express.js APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "express",
+    "api-docs",
+    "documentation",
+    "express-docs",
+    "swagger-alternative",
+    "route-docs"
+  ],
+  "author": "Deepak Sarun Yuvachandran <deeapaksarun@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeeapakSarun/express-route-docs"
+  },
+  "bugs": {
+    "url": "https://github.com/DeeapakSarun/express-route-docs/issues"
+  },
+  "homepage": "https://github.com/DeeapakSarun/express-route-docs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
