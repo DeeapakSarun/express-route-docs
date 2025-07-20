@@ -26,6 +26,7 @@ function docsHandler(req, res) {
       <title>Express-Docs</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="${cssFileName}">
+      <link rel="icon" type="image/png" href="/favicon.png" />
     </head>
     <body>
       <div class="container">
