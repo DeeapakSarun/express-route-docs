@@ -1,9 +1,14 @@
 # 📘 express-route-docs
+
 <p align="center">
-  <img alt="npm" src="https://img.shields.io/npm/v/express-route-docs">
-  <img alt="license" src="https://img.shields.io/npm/l/express-route-docs">
-  <img alt="downloads" src="https://img.shields.io/npm/dt/express-route-docs">
+  <a href="https://www.npmjs.com/package/express-route-docs">
+    <img alt="npm version" src="https://img.shields.io/npm/v/express-route-docs?cacheSeconds=60" />
+  </a>
+  <a href="https://github.com/DeeapakSarun/express-route-docs/blob/main/LICENSE">
+    <img alt="license" src="https://img.shields.io/npm/l/express-route-docs?cacheSeconds=60" />
+  </a>
 </p>
+
 
 > Instantly document your Express routes with a clean and developer-friendly `/docs` page.
 
