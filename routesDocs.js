@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const { getRoutes } = require("./routesTracker");
+const { getRoutes } = require("./routesTracker.js");
 
 const cssFileName = "/styles.css";  // served from /public
 
