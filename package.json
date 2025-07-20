@@ -1,6 +1,6 @@
 {
   "name": "express-route-docs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Zero-config route documentation generator for Express.js APIs",
   "main": "index.js",
   "scripts": {
