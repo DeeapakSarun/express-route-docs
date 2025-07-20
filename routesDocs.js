@@ -29,7 +29,7 @@ function docsHandler(req, res) {
     </head>
     <body>
       <div class="container">
-        <h1>🚀 API Docs & Tester</h1>
+        <h1>🚀 Express Routes Docs</h1>
         ${routes.map(route => {
           const borderColor = methodColors[route.method] || '#64748b';
           return `

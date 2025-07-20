@@ -2,65 +2,92 @@
 
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
-  margin: auto;
-  max-width: 1000px;
-  padding: 2rem;
-  background: #f3f4f6;
-  color: #2d3748;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
+  background: #121212; /* Greyish black */
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #d1d5db;
+  text-shadow: 0 0 4px #7f7f7f;
 }
 
+/* ====================
+   Method Labels
+   ==================== */
 .method {
   font-weight: 700;
-  color: white;
-  padding: 0.4rem 0.8rem;
+  color: #121212;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.method:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
 .GET {
-  background-color: #22c55e;
+  background-color: #16a34a;
+  box-shadow: 0 0 8px #16a34aaa;
 }
 
 .POST {
-  background-color: #3b82f6;
+  background-color: #2563eb;
+  box-shadow: 0 0 8px #2563ebaa;
 }
 
 .PUT {
-  background-color: #f59e0b;
+  background-color: #d97706;
+  box-shadow: 0 0 8px #d97706aa;
 }
 
 .DELETE {
-  background-color: #ef4444;
+  background-color: #dc2626;
+  box-shadow: 0 0 8px #dc2626aa;
 }
 
 .PATCH {
-  background-color: #8b5cf6;
+  background-color: #7c3aed;
+  box-shadow: 0 0 8px #7c3aedaa;
 }
 
-.OPTIONS, .HEAD, .ALL {
-  background-color: #64748b;
+.OPTIONS,
+.HEAD,
+.ALL {
+  background-color: #4b5563;
+  box-shadow: 0 0 6px #4b5563aa;
 }
 
+/* ====================
+   Route Blocks
+   ==================== */
 .route {
-  background: #fff;
-  border-left: 5px solid #0070f3;
+  background: #1e1e1e;
+  border-left: 4px solid #2563eb;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: 0.3s ease box-shadow;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .route:hover {
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  border-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.35);
 }
 
 .route-header {
@@ -72,64 +99,90 @@ h1 {
 }
 
 .route-path {
-  font-family: monospace;
+  font-family: 'SFMono-Regular', Consolas, monospace;
   font-size: 1rem;
-  color: #334155;
-  margin-left: 1rem;
+  color: #f1f5f9;
+  margin-left: 0.75rem;
   flex-grow: 1;
   word-break: break-word;
+  user-select: text;
 }
 
+/* ====================
+   Form Elements
+   ==================== */
 label {
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 1rem;
+  font-size: 0.85rem;
+  margin-top: 1.25rem;
   display: block;
-  color: #444;
+  color: #a1a1aa;
 }
 
 textarea {
-  width: 95%;
-  padding: 0.75rem;
-  font-family: monospace;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: 'SFMono-Regular', Consolas, monospace;
   font-size: 0.9rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #3b82f666;
   border-radius: 6px;
   resize: vertical;
   margin-top: 0.5rem;
+  color: #f3f4f6;
+  background: #2a2a2a;
+  box-sizing: border-box; /* ✅ Fix overflow */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 8px #60a5faaa;
+}
+
+/* ====================
+   Button
+   ==================== */
 button {
-  background: #0070f3;
+  background: #2563eb;
   color: white;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 1rem;
-  transition: background 0.2s ease;
+  margin-top: 1.25rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  box-shadow: 0 0 10px #2563eb88;
 }
 
 button:hover:not(:disabled) {
-  background: #0366d6;
+  background-color: #3b82f6;
+  box-shadow: 0 0 16px #3b82f6cc;
 }
 
 button:disabled {
-  background: #9ca3af;
+  background-color: #4b5563;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
+/* ====================
+   Code Block
+   ==================== */
 pre {
-  background: #f1f5f9;
+  background: #2a2a2a;
   border-radius: 6px;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   font-size: 0.85rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   white-space: pre-wrap;
   word-break: break-word;
   overflow-x: auto;
+  border-left: 4px solid #2563eb;
+  color: #e5e7eb;
+  font-family: 'SFMono-Regular', Consolas, monospace;
   display: none;
-  border-left: 4px solid #0070f3;
 }
